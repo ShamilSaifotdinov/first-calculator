@@ -1,0 +1,71 @@
+* {
+    font: 1em sans-serif;
+}
+.calc {
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    margin: 5% auto;
+    width: 190px;
+    padding: 20px 15px;
+    background: repeating-linear-gradient(-45deg, #2f2d2c, #2f2d2c 1px,#3d3a39 1px, #3d3a39 2px);
+}
+#screen {
+    width: 190px;
+    box-sizing: border-box;
+    background-color: #b8c6a3;
+    height: 30px;
+}
+.buttons {
+    margin-top: 23px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+.buttons > div {
+    width: 35px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    background: linear-gradient(to top, rgba(255,255,255,0) 20%, rgba(255,255,255, 0.3));
+    box-shadow: inset 0px -12px 0px 0px rgba(0, 0, 0, 30%); 
+    background-color: black;
+}
+.buttons > div#clean-entry, .buttons > div#clean {
+    background-color: #a61e1e;
+}
+.buttons > div#grant-total {
+    background-color: #304a8a;
+}
+.buttons > div#equal {
+    grid-area: 5/5/7/6;
+    padding-top: 15px;
+    box-shadow: inset 0px -30px 0px 0px rgba(0, 0, 0, 30%); 
+}
+.buttons > div:hover {
+    cursor: pointer;
+    box-shadow: inset 0px -25px 0px 0px rgba(255, 255, 255, 0.2);
+}
+.buttons > div:active {
+    box-shadow: inset 0px -25px 0px 0px rgba(255, 255, 255, 0.4);
+}
+.buttons > div#equal:hover {
+    cursor: pointer;
+    box-shadow: inset 0px -60px 0px 0px rgba(255, 255, 255, 0.2);
+}
+.buttons > div#equal:active {
+    box-shadow: inset 0px -60px 0px 0px rgba(255, 255, 255, 0.4);
+}
+
+.copyright {
+    position: fixed;
+    color: grey;
+    font-size: small;
+    right: 5px;
+    bottom: 0;
+}
+.copyright > p {
+    line-height: 0.5em;
+}
